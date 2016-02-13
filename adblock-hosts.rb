@@ -11,10 +11,10 @@ class AdblockHosts < Formula
     bin.install_symlink "#{prefix}/adblock-hosts"
   end
 
-  def caveats; <<-EOS.undent
-    You now need to run `adblock-hosts` for the first time to download hosts
-      data. This script can be run as often as desired to update hosts.
-    EOS
+  def post_install
+    puts "Updating and installing hosts."
+    puts "You may be prompted for your password."
+    system "echo 'y\\nn\\ny\\n' | adblock-hosts"
   end
 
   test do
