@@ -8,7 +8,7 @@ class Ltsa < Formula
 
   def install
     prefix.install "ltsa.jar"
-    system "echo '#!/bin/sh\\nnohup java -jar #{prefix}/ltsa.jar &\' > ltsa"
+    system "echo '#!/bin/sh\\nnohup java -jar #{prefix}/ltsa.jar &>/dev/null &' > ltsa"
     bin.install "ltsa"
   end
 
