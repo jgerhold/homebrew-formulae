@@ -1,8 +1,8 @@
 class Loginitems < Formula
   desc "Tool for managing login items"
   homepage "https://github.com/ojford/loginitems"
-  url "https://github.com/OJFord/loginitems/archive/v1.0.tar.gz"
-  sha256 "7efb6939224a6a8b7fbe6ef794885b303afcfe32751afa56ecd442800ab842d8"
+  url "https://github.com/OJFord/loginitems/archive/v1.3.tar.gz"
+  sha256 "04d8b38c083b3b680c32c7194c8dc1d7bc97435843718e80b15ee57be179bba5"
 
   def install
     bin.install "loginitems"
