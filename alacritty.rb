@@ -4,7 +4,7 @@ class Alacritty < Formula
   head "https://github.com/jwilm/alacritty.git", using: :git
 
   depends_on "cmake" => :build
-  depends_on "rust" => :build
+  depends_on "rustup" => :build
   depends_on "fontconfig"
 
   def install
